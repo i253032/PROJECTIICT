@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Novu</title>
+    <!-- reusing the same css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS specific to this page can go here or in style.css */
+        /* I will put it here for simplicity so you can see it working immediately */
+        
+        .hero-text {
+            text-align: center;
+            padding: 40px;
+            font-size: 36px;
+            font-family: 'Times New Roman', serif; /* Serif font for the classy look */
+        }
+
+        /* The two columns for Story and Mission */
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .info-box {
+            width: 45%;
+            line-height: 1.6;
+        }
+
+        .info-box h3 {
+            font-size: 24px;
+            font-family: 'Times New Roman', serif;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Team Section */
+        .team-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px; /* Space between photos */
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image a circle */
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .member-name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* The Brown Stats Bar */
+        .stats-banner {
+            background-color: #A68B73; /* The brown color from your image */
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+
+        .stat-item h2 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: normal;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* The Timeline Line */
+        .timeline {
+            border-top: 2px solid rgba(255,255,255,0.5);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #eee;
+            max-width: 800px;
+            margin: 0 auto; /* Centers the timeline */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- REUSING THE HEADER FROM PAGE 1 -->
+    <header style="background-color: black; height: 80px; display: flex; align-items: center; justify-content: space-between; padding: 0 50px;">
+        <nav style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+            <a href="#" style="color: white; text-decoration: none;">Menu</a>
+        </nav>
+        
+        <!-- Logo -->
+        <img src="images/novu.png" alt="NOVU" style="height: 35px;">
+
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <button style="background-color: #FFC107; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Start Order</button>
+            <img src="images/profile.png" style="height: 20px;">
+            <img src="images/search.png" style="height: 20px;">
+            <div style="background-color: #FFC107; width: 20px; height: 20px; border-radius: 50%; text-align: center; font-size: 12px; font-weight: bold;">0</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    
+    <!-- Title -->
+    <div class="hero-text">
+        Experience the Novu <br> Difference
+    </div>
+
+    <!-- Story & Mission -->
+    <div class="info-section">
+        <div class="info-box">
+            <h3>Our Story</h3>
+            <p>
+                Founded in 2018, Novu began with a simple yet ambitious vision: to reimagine the dining experience by blending local heritage with modern culinary techniques. What started as a small family-run kitchen has blossomed into a sanctuary for food lovers. At Novu, we believe that every meal tells a story, and we have dedicated ourselves to sourcing the finest organic ingredients to ensure that our story is one of quality, passion, and flavor.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Our Mission</h3>
+            <p>
+                To craft unforgettable moments through exceptional food and heartfelt hospitality. We strive to create a space where tradition meets innovation, ensuring every guest leaves feeling nourished, inspired, and at home.
+            </p>
+        </div>
+    </div>
+
+    <!-- Culinary Family (Team) -->
+    <div class="team-title">Meet Our Culinary Family</div>
+    
+    <div class="team-container">
+        <!-- Member 1 -->
+        <div class="team-member">
+            <img src="images/chef_anaya.png" alt="Chef Anaya">
+            <div class="member-name">Chef Anaya Nadeem</div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-member">
+            <img src="images/chef_liam.png" alt="Liam Chen">
+            <div class="member-name">Liam Chen</div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-member">
+            <img src="images/chef_alin.png" alt="Alin Wasy">
+            <div class="member-name">Alin Wasy</div>
+        </div>
+    </div>
+
+    <!-- Stats Footer -->
+    <div class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h2>500+</h2>
+                <span>Happy Guests Daily</span>
+            </div>
+            <div class="stat-item">
+                <h2>10+</h2>
+                <span>Awards & Mentions</span>
+            </div>
+            <div class="stat-item">
+                <h2>5</h2>
+                <span>Years of Excellence</span>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <span>2018: Grand Opening</span>
+            <span>2020: Brand New Location Launch</span>
+            <span>2023: Michelin Plate Recognition</span>
+        </div>
+    </div>
+
+    <!-- Mandatory Disclaimer -->
+    <footer style="text-align: center; font-size: 12px; color: gray; padding: 20px;">
+        <p>Disclaimer: Images used on this website are AI-generated for educational purposes.</p>
+    </footer>
+
+</body>
+</html>
