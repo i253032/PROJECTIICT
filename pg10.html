@@ -18,3 +18,31 @@
             display: flex; /* Puts items in a row */
             justify-content: space-between; /* Spreads them out */
         }
+        
+        header a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        /* Layout: Flexbox to put 3 columns next to each other */
+        .main-box {
+            display: flex;
+            gap: 40px; /* Space between columns */
+            margin-top: 30px;
+        }
+
+        /* Each column takes equal space */
+        .col {
+            flex: 1;
+        }
+
+        /* Input boxes styling */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 20px; /* Round corners */
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
