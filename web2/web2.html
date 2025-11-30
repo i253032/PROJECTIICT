@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>Login Page</title>
+    </head>
+    <style>
 
+    .body{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .welcome{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .main{
+        background: #fbdb0b;
+        border: none;
+        padding: 20px 60px;
+        border-radius: 40px;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left:30%;
+        margin-bottom: 10px;
+    }
+    .sign{
+        background-color: yellow;
+        margin-left:30%;
+        color: rgb(0, 0, 0);
+       font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .screen {
+    width: 40%;
+    height: auto;
+    background: white;
+    margin: 30px auto;
+    border-radius: 20px;
+    overflow: auto;
+    padding: 10px;
+    border: 2px solid black;
+    }
+    </style>
+    <body>
+        <div class="screen">
+
+    <h1 class="body"style="text-align: center;">Welcome back!</h1> 
+    <button class="main welcome"; style="text-align: center;" >Login !</button >
+    <p style="text-align: center;">
+    Please enter your login details below:
+    </p>
+    <h2>
+        <form action="login" method="post">
+        
+        <div style="text-align: center;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="ab@gmail.com" required>
+        </div>
+
+         <div style="text-align: center;">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="12345678" required>
+        </div>
+    </h2>
+   </form>
+    <form action="Forgot Password" method="post">
+        <div style ="margin-top: 20px; margin-left: 25%;display: flex;">
+            <button  style="background-color: yellow;"onclick="ForgotPassword()"type="button">Forgot Password</button>
+             <div style ="margin-left: 80px;">
+            <button  style="background-color: yellow;"onclick="Login()" type="button">Login</button>
+        </div>
+        </div>
+    
+    </form>
+    <div style="margin-top: 20px;">
+        <button class="sign"onclick="SigninwithGoogle()" >
+            Sign in with Google
+        </button>
+        <button class="sign" style="margin-top:10px"onclick="SigninwithFacebook()">
+            Sign in with Facebook
+        </button>
+    </div>
+    <div style="margin-top: 15px;">
+        <button style="margin-top:10px; font-weight: bold;margin-left:40%" onclick="SignUp()">
+         Don't have an account? Sign Up
+        </button>
+    </div>
+</div>
+<script>
+    function SigninwithFacebook() {
+        alert("Sign in with Facebook button clicked!");
+    }
+    function SigninwithGoogle() {
+        alert("Sign in with Google button clicked!");
+    }
+    function ForgotPassword() {
+        alert("Forgot Password button clicked!");
+    }   
+    function Login() {
+        alert("Login button clicked!");
+    }
+    function SignUp() {
+        alert("Don't have an account? Sign Up button clicked!");
+    }
+    </script>
+
+    </body>
+
+       
+       
+    
+</html>
