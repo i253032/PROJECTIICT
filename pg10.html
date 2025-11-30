@@ -63,3 +63,89 @@
             border-radius: 15px;
             position: relative;
         }
+        /* Chef Image */
+        .chef {
+            width: 100px;
+            position: absolute;
+            top: -60px;
+            right: 0;
+        }
+
+        /* Confirm Button */
+        .confirm-btn {
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+        </div>
+        <div>CHECKOUT</div>
+    </header>
+
+    <div class="main-box">
+
+        <div class="col">
+            <h2>Billing Info</h2>
+            <p style="color: grey; font-size: 14px;">
+                <input type="checkbox" style="width: auto;"> Same as shipping
+            </p>
+            
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Street Address">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Country">
+        </div>
+
+        <div class="col">
+            <h2>Payment Method</h2>
+            
+            <div>
+                <button class="payment-btn" onclick="selectMe(this)">Credit Card</button>
+                <button class="payment-btn" onclick="selectMe(this)">Debit Card</button>
+                <button class="payment-btn" onclick="selectMe(this)">Google Pay</button>
+                <button class="payment-btn" onclick="selectMe(this)">Apple Pay</button>
+            </div>
+
+            <br>
+            <input type="text" placeholder="Card Number (1234-5678...)">
+            <input type="text" placeholder="CVV">
+            <input type="text" placeholder="Expiry Date">
+        </div>
+
+        <div class="col">
+            <br><br> <div style="position: relative;">
+                
+                <img src="images/chef.png" class="chef" alt="Chef">
+                
+                <div class="summary-card">
+                    <h3 style="text-align: center;">Order Summary</h3>
+                    
+                    <p>🍔 <b>Burger</b> <span style="float:right;">$12.99</span></p>
+                    <p>🍟 <b>Fries</b> <span style="float:right;">$4.50</span></p>
+                    <p>🥤 <b>Drink</b> <span style="float:right;">$7.00</span></p>
+                    <hr>
+                    <p><b>Total:</b> <span style="float:right;">$26.45</span></p>
+
+                    <br>
+                    <button class="confirm-btn" onclick="finishOrder()">Pay Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: grey;">
+        Disclaimer: Images used are AI-generated.
+    </footer>
