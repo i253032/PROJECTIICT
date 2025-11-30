@@ -201,6 +201,20 @@
     <footer style="text-align: center; font-size: 12px; color: gray; padding: 20px;">
         <p>Disclaimer: Images used on this website are AI-generated for educational purposes.</p>
     </footer>
+<script>
+    // Console log for debugging (Requirement)
+    console.log("About Us page loaded.");
 
+    // Simple function to greet user when clicking a chef
+    var chefs = document.getElementsByClassName('team-member');
+    
+    for(var i = 0; i < chefs.length; i++) {
+        chefs[i].onclick = function() {
+            var name = this.innerText; // Gets the name of the chef
+            alert("You selected " + name + ". View their bio?");
+            console.log("User clicked on: " + name);
+        }
+    }
+</script>
 </body>
 </html>
