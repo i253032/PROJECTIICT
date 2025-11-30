@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVU - Pan Asian Fusion</title>
+    
+    <style>
+        /* --- CSS STYLES --- */
+
+        /* 1. General Page Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* 2. Header Layout (Black Bar) */
+        header {
+            background-color: black;
+            height: 80px; 
+            display: flex; /* Keeps items side-by-side */
+            align-items: center; /* Centers items vertically */
+            justify-content: space-between; /* Spreads items to the edges */
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        /* 3. Left Navigation Links */
+        .left-nav a {
+            color: white;
+            text-decoration: none; /* No underline */
+            margin-right: 30px; 
+            font-size: 15px;
+            font-weight: normal;
+        }
+
+        .left-nav a:hover {
+            color: #FFC107; /* Turns yellow on hover */
+        }
+
+        /* 4. Center Logo */
+        .logo-container {
+            flex-grow: 1; 
+            text-align: center; 
+        }
+
+        .main-logo {
+            height: 35px; /* Adjust if your logo is too big/small */
+        }
+
+        /* 5. Right Side Buttons */
+        .right-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        /* The Yellow Button */
+        .order-btn {
+            background-color: #FFC107; /* Yellow color */
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px; 
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #e0a800; /* Darker yellow on hover */
+        }
+
+        /* The Icons (Profile & Search) */
+        .icon-link img {
+            height: 22px; 
+            width: auto;
+            display: block; 
+        }
+
+        /* The "0" Badge */
+        .cart-badge {
+            background-color: #FFC107;
+            color: black;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%; /* Circle */
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 22px; /* Centers text */
+        }
+
+        /* 6. Footer Disclaimer (Required) */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Main Content Area */
+        main {
+            padding: 100px;
+            text-align: center;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <nav class="left-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Chinese Menu</a>
+        </nav>
+
+        <div class="logo-container">
+            <img src="novu.png" alt="NOVU Logo" class="main-logo">
+        </div>
+
+        <div class="right-actions">
+            
+            <button class="order-btn" onclick="startOrder()">Start Order</button>
+            
+            <a href="#" class="icon-link">
+                <img src="images/profile.png" alt="Profile">
+            </a>
+
+            <a href="#" class="icon-link">
+                <img src="images/search.png" alt="Search">
+            </a>
+
+            <div class="cart-badge">0</div>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Welcome to NOVU</h1>
+        <p>Your content will go here.</p>
+    </main>
+
+    <footer>
+        <p>Disclaimer: Images used on this website are AI-generated for educational purposes.</p>
+    </footer>
+
+    <script>
+        // Phase 5 Requirement: Console Log for debugging
+        console.log("Header loaded successfully.");
+
+        function startOrder() {
+            // Phase 5 Requirement: Javascript Alert
+            alert("Welcome! Redirecting to menu...");
+            
+            // Console log user interaction
+            console.log("User clicked Start Order button.");
+        }
+    </script>
+
+</body>
+</html>
