@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu List</title>
+</head>
+<body>
+    <div style="width:250px; float:left; padding:20px; border-right:1px solid lightgray;">
+<h3>Categories</h3>
+<input type="text" placeholder="Find a category"><br><br>
+<input type="checkbox" id="Soup" onclick="filter()"> Soup <br>
+<input type="checkbox" id="Dessert" onclick="filter()"> Dessert <br>
+<input type="checkbox" id="Chicken" onclick="filter()"> Chicken <br>
+</div>
+<div style="margin-left:300px; padding:20px;">
+    <div style="display:flex; gap:30px;">
+        <div>
+            <img src="Hotsour.png" width="150"><br>
+            <b>Hot & Sour</b><br>
+            <p>Soup</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;&#9733;</span><br>
+            Rs 595
+        </div>
+        <div>
+            <img src="thaigeern.png" width="150"><br>
+            <b>Fiery Thai</b><br>
+            <p>Chicken</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div>
+            <img src="thaigreenchicken.png" width="150"><br>
+            <b>Green Chicken</b><br>
+            <p>Chicken</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;</span>
+            <span style="font-size:40px; color:rgb(30, 30, 26);">&#9733;</span><br>
+            Rs 1550
+        </div>
+
+        <div>
+            <img src="tomyomsoup.png" width="150"><br>
+            <b>Tom Yom Soup</b><br>
+            <p>Soup</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;&#9733;</span><br>
+            Rs 625
+        </div>
+
+        <div>
+            <img src="lemongrass.png" width="150"><br>
+            <b>Lemon Chicken</b><br>
+            <p>Chicken</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;</span>
+            <span style="font-size:40px; color:rgb(30, 30, 26);">&#9733;</span><br>
+            Rs 1475
+        </div>
+        </div>
+        <div style="display:flex; gap:30px; margin-top:20px;">
+        <div>
+            <img src="Szechuan.png" width="150"><br>
+            <b>Szechuan Soup</b><br>
+            <p>Soup</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;&#9733;</span>
+            Rs 1525
+        </div>
+        <div>
+            <img src="BUffalo.png" width="150"><br>
+            <b>Buffalo Wings</b><br>
+            <p>Chicken</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;</span>
+            <span style="font-size:40px; color:rgb(30, 30, 26);">&#9733;</span><br>
+            Rs 1200
+        </div>
+        <div>
+            <img src="New York.png" width="150"><br>
+            <b>New York(Cheese Cake)</b><br>
+            <p>Dessert</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;&#9733;</span>
+            Rs 750
+        </div>
+        <div>
+            <img src="Juha Fish.png" width="150"><br>
+            <b>Thai Green</b><br>
+            <p>Chicken</p>
+            <span style="align-items: center;font-size:40px; color:rgb(216, 216, 62);">&#9733;&#9733;&#9733;</span>
+            <span style="font-size:40px; color:rgb(30, 30, 26);">&#9733;</span><br>
+            Rs 1825
+        </div>
+    </div>
+    <script>
+        function filter()
+        {
+            console.clear();
+             alert("Filtering Items");
+            console.log("Soup =", document.getElementById("Soup").checked);
+            console.log("Dessert =", document.getElementById("Dessert").checked);
+            console.log("Chicken =", document.getElementById("Chicken").checked);
+        }
+        </script>
+
+</body>
+</html>
