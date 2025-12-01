@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experience The Novu Difference</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Times New Roman', serif; 
+        }
+        .hero-banner {
+            background-image: url('restaurant.png');
+            height: 400px;
+            background-size: cover;  
+            background-position: center;
+            
+            /* Centers the text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: white;
+            font-size: 60px; 
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black; /* Shadow to make text pop */
+            line-height: 1.2; /* Spacing between lines */
+        }
+        /*this is for story and mission section*/
+        .text-section {
+            padding: 50px;
+            display: flex; /* Puts Story and Mission side-by-side */
+            gap: 50px; /* Space between the two columns */
+        }
+
+        .text-column {
+            flex: 1; /* Makes both columns equal width */
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /*  CHEF SECTION  just started */
+        .chef-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .chef-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 30px;
+        }
+
+        .chef-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* used to circle,round the image */
+            object-fit: cover;
+        }
+
+        .chef-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        /* The Brown Bottom Part*/
+        .stats-bar {
+            background-color: #A68B73; 
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 100px; 
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-family: serif;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-banner">
+        <div class="hero-text">
+            Experience the Novu<br>Difference
+        </div>
+    </div>
+
+    <div class="text-section">
+
+        <div class="text-column">
+            <h2>Our Story</h2>
+            <p>Founded in 2018, Novu began with a simple yet ambitious vision: to reimagine the dining experience by blending local heritage with modern culinary techniques. What started as a small family-run kitchen has blossomed into a sanctuary for food lovers. At Novu, we believe that every meal tells a story.</p>
+        </div>
+
+    
+        <div class="text-column">
+            <h2>Our Mission</h2>
+            <p>To craft unforgettable moments through exceptional food and heartfelt hospitality. We strive to create a space where tradition meets innovation, ensuring every guest leaves feeling nourished, inspired, and at home.</p>
+        </div>
+    </div>
+
+ 
+    <div class="chef-section">
+        <h2>Meet Our Culinary Family</h2>
+        
+        <div class="chef-container">
+    
+            <div>
+                <img src="chef_anaya.png" class="chef-circle">
+                <div class="chef-name">Chef Anaya Nadeem</div>
+            </div>
+
+           
+            <div>
+                <img src="chef_liam.png" class="chef-circle">
+                <div class="chef-name">Liam Chen</div>
+            </div>
+
+     
+            <div>
+                <img src="chef_alin.png" class="chef-circle">
+                <div class="chef-name">Alin Wasy</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="stats-bar">
+        <div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Happy Guests Daily</div>
+        </div>
+        <div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Awards & Mentions</div>
+        </div>
+        <div>
+            <div class="stat-number">5</div>
+            <div class="stat-label">Years of Excellence</div>
+        </div>
+    </div>
+
+</body>
+</html>

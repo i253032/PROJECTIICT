@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shipping</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 20px;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .method-button {
+            padding: 8px 12px;
+            font-weight: italic;
+            margin: 5px 5px 10px 0;
+            background-color: yellow;
+            border: solid black 2px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .order-summary {
+            margin: 5px 0;
+        }
+
+        .order-summary strong {
+            font-size: 18px;
+        }
+    </style>
+    <div>
+        <div class="container">
+            <div class="column">
+                <h2>Billing & Shipping</h2>
+                <label>
+                    <div style="display: inline-block;">
+                        <input type="checkbox" > 
+                    </div>
+                    <div style="display: inline-block;">Shipping address is the same as billing</div>
+                </label><br><br>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Street No">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Country">
+            </div>
+            <div class="column" style="align-items: center;text-align: center;margin-left: 5px;">
+                <h2>Payment Method</h2>
+                <button class="method-button">Credit Card</button>
+                <button class="method-button">Debit Card</button><br>
+                <button class="method-button">Google Pay</button>
+                <button class="method-button">PayPal</button>
+                <br><br>
+                <p style="text-align: left;"><i>Cardholder Name</i></p>
+                <input type="text" placeholder="1234 6789 1111 2345"><br>
+                <p style="text-align: left;"><i>CVV:</i></p>
+                <input type="text" placeholder="Expiry Date"><br>
+            </div>
+            <div class="column order-summary" style="display: flexbox;">
+                <img src="chef.jpeg" alt="Chef Image" style="width:30%; border-radius: 10px;  display: inline;">
+                <h2 style="display: flex;margin-top:; display: inline;text-align: center;margin-bottom: 20px;">Order Summary</h2>
+                <p style="text-align: center;font-size: small;">Your Order Summary</p>
+                <hr />
+                <pre>Classic Cheeseburger <span style="margin-left: 5px"><i>-Quantity 1  </i></span><strong style="margin-left: 70px;">RS 700</strong></pre>
+                <hr />
+                <pre>Sweet Potato Fries <span style="margin-left: 2x;"><i>-Quantity 2  </i></span><strong style="margin-left: 70px;">RS 1000</strong></pre>
+                <hr />
+                 <pre>Dessert <span style="margin-left: 2x"><i>-Quantity 1    </i></span><strong style="margin-left: 150px;">RS 750</strong></pre>
+                <hr />
+                <pre>Sub total  <span style="margin-left: 250px;">RS 2450    </span></pre>
+                <pre>Tax (18%) <span style="margin-left: 254px;">RS 441    </span></pre>
+                <pre>Total: <strong style="margin-left: 260px;">RS 2891</strong></pre>
+            </div>
+        </div>
+    </div>
+</body>
+    </html>
