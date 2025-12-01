@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Page cart</title>
+        </head>
+    <body>
+        <style>
+            .body{
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+
+            }
+            .welcome{
+                font-weight: bold;
+            }
+            .item-price{
+                font-size: 16px;
+                font-weight: Arial;
+            }
+            .empty-cart{
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .main{
+                background: #fbdb0b;
+                border: none;
+                padding: 5px 20px;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-left:5%;
+                margin-top: 10px;
+            }
+            .sign{
+                background-color: yellow;
+                margin-left:30%;
+                color: rgb(0, 0, 0);
+               font-weight: bold;
+                padding: 10px 50px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .screen {
+            width: 40%;
+            height: auto;
+            background: white;
+            margin: 30px auto;
+            border-radius: 20px;
+            overflow: auto;
+            padding: 10px;
+            border: 2px solid black;
+            }
+            .close-btn{
+                margin-right: 20px;
+                font-size: 36px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .delete-icon{
+                width: 40px;
+                height: 40px;
+                transition: transform 0.2s;
+                cursor: pointer;
+            }
+            .delete-icon:hover{
+                transform: scale(1.2);
+            }
+            .items-controls{
+               
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .quantity-btn{
+                text-align: center;
+                margin-left: 20px;
+                height: 8px;
+                width: 8px;
+                border-color:  black;
+                background-color: yellow;
+                font-weight: bold;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+
+                justify-content: center;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.2s;
+                
+            }
+            .cart-item{
+                background: #fbdb0b;
+                border-radius: 20px;
+                padding: 10px;
+                align-items: center;
+                margin-top: 10px;
+            }
+         </style>
+    <div class="screen">
+    <h1 style="margin-left: 20px;margin-top:8px;"onclick="closeCart()">X   <u style="margin-left: 20px;"  >Your Cart Items</u> </h1> 
+     <div class="main cart-item">
+         <h2 style="margin-top: 0%;text-align: left;">Hot & Sour Soap  
+            
+            <img src="bin.png" alt="delete Image" onclick="removeItem()" style="margin-top: 8px;margin-left: 200px;height:50px;background-color: yellow;">
+          </h2>
+          <p class="item-price">Price : RS 500</p>
+            <div class="items-controls">
+              <div style="margin-left: 30px;"> Quantity: </div>
+          <p>
+            <div  class="quantity-btn">
+                <button onclick="decrease()">-</button>
+                
+            <span id="qty"  style="margin-left:10px;margin-right:10px;font-size:20px;">1</span>
+            <button  onclick="increase()">+</button>
+           </p>
+          </div>
+           </div> 
+            </div>
+            <h2 id="total-price" style="margin-left: 20px;margin-top:20px;">Total Price: RS 500</h2>
+            <p id="tax-info" style="margin-left: 20px;margin-top:3px;">Tax will be calculated at checkout</p>
+           
+        <div style="margin-top: 20px;">
+            <button class="main" style="margin-left: 20%;" onclick="checkout()">Proceed to Checkout</button>  
+        <div style="margin-top: 10px;">
+            <button class="main" style="margin-left: 20%;">Continue Shopping</button>
+
+        </div>
+        <script>
+           let quantity = 1;
+           let pricePerItem = 500;
+           function increase(){
+            quantity++;
+            updateQuantity();
+           }
+              function decrease(){
+                if(quantity>1){
+                 quantity--;
+                 updateQuantity();
+                }
+              }
+                function updateQuantity(){
+                    document.getElementById("qty").innerText = quantity;
+                    let totalPrice = quantity * pricePerItem;
+                   document.getElementById("total-price").innerText = "Total Price: RS " + totalPrice;
+                   document.getElementById("tax-info").innerText = "Tax will be calculated at checkout ( RS " + (totalPrice * 0.1).toFixed(2) + " )";
+
+
+                }
+            function removeItem(){
+                if(confirm("Are you sure you want to remove this item from the cart?")){
+                    alert("Item removed from cart.");
+                }
+            }
+            function closeCart(){
+                alert("Cart Closed");
+            }
+            function checkout(){
+                let total = quantity * pricePerItem;
+                alert("Proceeding to Checkout");
+            }
+            
+        </script>
+    </body>
+</html>
