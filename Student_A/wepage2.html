@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>Login Page></title>
+    <script src="Functions.js"></script>
+    <link rel="stylesheet" href="LS.css">
+ </head>
+ <body>
+        <div class="screen">
+
+    <h1 class="body"style="text-align: center;">Welcome back!</h1> 
+    <button class="main welcome"; style="text-align: center;margin-left: 45%;" >Login !</button >
+    <p style="text-align: center;">
+    Please enter your login details below:
+    </p>
+    <h2>
+        <form action="login" method="post">
+        
+        <div style="text-align: center;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="ab@gmail.com" required>
+        </div>
+
+         <div style="text-align: center;">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="12345678" required>
+        </div>
+    </h2>
+   </form>
+    <form action="Forgot Password" method="post">
+        <div style ="margin-top: 20px; margin-left: 25%;display: flex;">
+            <button  style="background-color: yellow;"onclick="ForgotPassword()"type="button">Forgot Password</button>
+             <div style ="margin-left: 80px;">
+            <button  style="background-color: yellow;"onclick="Login()" type="submit">Login</button>
+        </div>
+        </div>
+    
+    </form>
+    <div style="margin-top: 20px;">
+        <button class="sign"onclick="SigninwithGoogle()" >
+            Sign in with Google
+        </button>
+        <button class="sign" style="margin-top:10px"onclick="SigninwithFacebook()">
+            Sign in with Facebook
+        </button>
+    </div>
+    <div style="margin-top: 15px;">
+        <button style="margin-top:10px; font-weight: bold;margin-left:40%" onclick="SignUp()">
+         Don't have an account? Sign Up
+        </button>
+    </div>
+</div>
+  </body>
+  </html>
