@@ -3,14 +3,11 @@
 <head>
     <title>Checkout</title>
     <style>
-        /* --- CSS STYLES --- */
-        
-        body {
+         body {
             font-family: Arial, sans-serif;
             padding: 30px;
-        }
-
-        /* The Black Header */
+         }
+        
         header {
             background-color: black;
             color: white;
@@ -25,10 +22,10 @@
             text-decoration: none;
         }
 
-        /* Layout: Flexbox to put 3 columns next to each other */
+        /* put 3 columns next to each one */
         .main-box {
             display: flex;
-            gap: 40px; /* Space between columns */
+            gap: 40px; /* Space b/w columns */
             margin-top: 30px;
         }
 
@@ -147,13 +144,10 @@
     </div>
 
     <footer style="text-align: center; margin-top: 50px; color: grey;">
-        Disclaimer: Images used are AI-generated.
     </footer>
      <script>
-        // 1. Console Log (Required by teacher)
         console.log("Checkout page is ready");
-
-        // 2. Simple Function to Color the Button
+         
         function selectMe(clickedButton) {
             
             // This just turns the clicked button Blue (Teal)
@@ -163,8 +157,6 @@
             // Console log (Required)
             console.log("User selected a payment method");
         }
-
-        // 3. Simple Function for the Pay Button
         function finishOrder() {
             // Alert (Required by teacher)
             alert("Payment Successful! Thank you.");
