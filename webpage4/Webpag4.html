@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title></head>
+    <body>
+        <p style="margin-left: 50px;text-color: black;font-style: italic;font-size: medium;">Home/Japnese Menu/Buffalo Wings</p>
+    <img src="BUffalo.png" alt="Buffalo Wings" style="width:350px;border-radius: 10px;display:flex;float: left;margin-left: 50px;">
+    <h1 style="font-size: 32px;font-weight: bold;margin-left: 50px;text-align: center;">Buffalo Wings</h1>
+    <hr>
+    <p><b>Category :</b> Japanese Menu</p>
+    <hr>
+    <pre style="margin-left: 10px;text-align: center;font-size: large;"><b>Description:</b>   <i>Juicy chicken wings coated in a tangy buffalo sauce, served with celery <br>and blue cheese dressing.</i></pre>
+     <hr>
+     <p style="font-size: 22px;margin-left: 500px;margin-top: 15px;"><b>Price: Rs </b>1200</p> 
+     <p style="font-size: 35px;margin-left: 540px;margin-top: 10px;"><b>In Stock </b></p>  
+    <div style="margin-left: 400px;margin-top: 20px;font-size: large;"><b>Quantity:</b></div>
+    <div style="display: flex;">
+    <div style="margin-top: 3px;">
+        <button style="padding: 0px 10px;margin-left: 12px;font-size: 15px;background-color: yellow;border: 2px solid black;cursor: pointer;" onclick="minusQty()">-</button>
+        <span id="qty-number" style="font-size: 26px;margin: 0 15px;"onclick="updateQuantityDisplay()">1</span>
+        <button  style="padding: 0 10px;font-size: 15px;background-color: yellow;border: 2px solid black;cursor: pointer;transition: 0.2s;" onclick="plusQty()">+</button>
+    </div>
+    <button style="background-color: yellow;font-size: medium;
+    margin-top: 3px;margin-left: 15px;border-color: black;padding: 0 200px;float: right;width: 150px;text-align: center;te;cursor: pointer;" onclick="order()">Order Now</button>
+    </div>
+    </div>
+    <script>
+        let qty = 1;
+        let price = 1200;
+        function minusQty() {
+            if (qty > 1) {
+                qty--;
+                document.getElementById("qty-number").innerText = qty;
+            }
+        }
+        function plusQty() {
+            qty++;
+            document.getElementById("qty-number").innerText = qty;
+        }
+        function updateQuantityDisplay() {
+            document.getElementById("qty-number").innerText = qty;
+        }
+        function order(){
+            alert("You have ordered " + qty + " Buffalo Wings. Total Price: Rs " + (price * qty));
+
+        }
+    </script>
+    </body></html>
